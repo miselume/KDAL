@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+  user-select: none;
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+}
+
+.team {
+  width: 320px;
+  background-color: transparent;
+  border-radius: 16px;
+  padding: 24px 0 32px;
+  transition: transform 0.2s ease;
+}
+
+.team:hover {
+  transform: scale(1.03);
+}
+
+.team h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #ddd;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.team table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+.team thead th {
+  padding: 14px 12px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.team tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background-color 0.15s ease;
+}
+
+.team tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#red-team {
+  background-color: #ff3b30;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: none;
+}
+
+#red-team thead th {
+  background-color: #d32f2f;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+#red-team tbody td {
+  background-color: #ff4f4f;
+}
+
+#red-team tbody tr:hover td {
+  background-color: #ff6a6a;
+  cursor: default;
+}
+
+#blue-team {
+  background-color: #007aff;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: none;
+}
+
+#blue-team thead th {
+  background-color: #005ecb;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+#blue-team tbody td {
+  background-color: #3399ff;
+}
+
+#blue-team tbody tr:hover td {
+  background-color: #66b3ff;
+  cursor: default;
+}
